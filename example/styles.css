@@ -1,0 +1,140 @@
+/* Viewer div styling */
+#fp-view {
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    margin: 10px;
+  }
+
+  #tooltip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px 12px;
+    font-family: monospace;
+    background: #a0c020;
+    display: none;
+    opacity: 0;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.25s linear;
+    border-radius: 3px;
+  }
+  body { 
+    margin: 2px;
+    /*background-color: #101010;*/
+    background-color: #a0a0a0;
+    height: 60%;
+    font-family: Monospace;
+    font-size: small;
+  }
+
+  body.noScroll {
+    overflow: hidden;
+  }
+
+  .columns {
+    height: 99%;
+    max-width: 1600px;
+  }
+    .styled-table {
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 0.9em;
+      font-family: sans-serif;
+      min-width: 400px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+      position:relative;
+  }
+  .styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  .styled-table th,
+  .styled-table td {
+      padding: 12px 15px;
+  }
+  .styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+
+  .left {
+    width: 280px;
+    float: left;
+    background: #bbb;
+    height: 600px;
+    overflow: scroll !important;
+  }
+  .tableContainer {
+    height: 500px;
+    overflow: auto;
+  } 
+  .table {
+      position: sticky;
+      top: 0;
+      width: 100%;
+  }
+  .right {
+    float: none;
+    background: #efefef;
+    width: auto;
+    height: 400px;
+    overflow: hidden;
+  }
+
+  .DataTables{
+    position: relative;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    margin: 10px; 
+  }
+  .rightPane {
+    float: none;
+    background: #202020;
+    color: #efefef;
+    width: auto;
+    height: calc(99vh - 600px);
+    overflow: scroll !important;
+  }
+  #tooltip {
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-width: 100px;
+    min-height: 32px;
+    text-align: center;
+    padding: 5px 12px;
+    font-family: monospace;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    opacity: 0;
+    border: 1px solid black;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.25s linear;
+    border-radius: 3px;
+    
+    background-image: url(https://bigsteelant.github.io/personal/static/img/bounceBall.54b1b14.gif);
+    background-size: contain;
+  }
+  #fp-gui {
+    padding: 4px;
+  }
+
+  /*! houdinijs v9.4.2 | (c) 2017 Chris Ferdinandi | MIT License | http://github.com/cferdinandi/houdini */
+  .collapse-text-hide,.js-houdini .active>.collapse-text-show{display:none;visibility:hidden}
+  .js-houdini .active>.collapse-text-hide{display:inline-block;visibility:visible}
+  .js-houdini .collapse{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+  .js-houdini .collapse.active{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}
+  .js-houdini .collapse:focus{outline:none}
